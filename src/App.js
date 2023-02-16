@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Counter from './Counter';
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <Counter initValue={0} initStep={1}/>
+      <Counter initValue={108} initStep={2}/>
     </div>
   );
 }
