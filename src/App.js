@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Counter from './Counter';
+import CounterFunctional from './CounterFunctional';
 
 function App() {
   return (
@@ -20,8 +21,10 @@ function App() {
           Learn React
         </a>
       </header>
-      <Counter initValue={0} initStep={1}/>
-      <Counter initValue={108} initStep={2}/>
+      {/* <Counter initValue={0} initStep={1}/>
+      <Counter initValue={108} initStep={2}/> */}
+      <CounterFunctional initValue={0} initStep={1}/>
+      <CounterFunctional initValue={108} initStep={2}/>
     </div>
   );
 }

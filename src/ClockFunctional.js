@@ -19,7 +19,7 @@ const ClockFunctional = (props) => {
             clearInterval(timerID)
             console.log (`Unmounting lifeCycle componentWillUnmount()`);
         })
-    });
+    }, [date]);
 
     return (
         <div className='clock'>
